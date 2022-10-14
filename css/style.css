@@ -1,0 +1,306 @@
+/* Обнуление */
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{box-sizing: border-box;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;}
+nav,footer,header,aside{display: block;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+input,button,textarea{font-family:inherit;}
+button{cursor: pointer;}
+a,a:visited{text-decoration: none;color: inherit;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{max-width: 100%;height: auto;}
+/* h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;} */
+
+/* Локальные шрифты */
+@font-face {
+    font-family: 'Gotham Pro Regular';
+    font-display: swap;
+    src: url('../fonts/gotham-pro/GothamPro.eot');
+    src: url('../fonts/gotham-pro/GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham-pro/GothamPro.woff') format('woff'),
+    url('../fonts/gotham-pro/GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    font-display: swap;
+    src: url('../fonts/gotham-pro/GothamPro-Medium.eot');
+    src: url('../fonts/gotham-pro/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham-pro/GothamPro-Medium.woff') format('woff'),
+    url('../fonts/gotham-pro/GothamPro-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    font-display: swap;
+    src: url('../fonts/gotham-pro/GothamPro-Bold.eot');
+    src: url('../fonts/gotham-pro/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham-pro/GothamPro-Bold.woff') format('woff'),
+    url('../fonts/gotham-pro/GothamPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ----------- Общие ----------- */
+body{
+    font-family: "Gotham Pro Medium";
+    font-size: 16px;
+    color: #141414;
+}
+.container{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ----------- Header ----------- */
+.header{
+    background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+    overflow: hidden;
+}
+.header__wrapper{
+    position: relative;
+    height: 90px;
+}
+.header__logo{
+    position: absolute;
+    top: 25px;
+    left: -234px;
+}
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+}
+.header__list{
+    font-family: 'Montserrat';
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+}
+.header__menu-left{
+    padding: 33px 0;
+}
+.header__item-left{
+    line-height: 24px;
+}
+.header__item-left + .header__item-left{
+    margin-left: 60px;
+}
+.header__menu-right{
+    padding: 35px 0;
+}
+.header__item-right{
+    color: #8B8B8B;
+    line-height: 20px;
+}
+.header__item-right + .header__item-right{
+    margin-left: 40px;
+}
+.header__link:hover, .header__link:focus{
+    opacity: .6;
+}
+.header__lesson{
+    position: absolute;
+    top: 0;
+    right: -235px;
+    padding: 14px 30px;
+    margin: 21px 0;
+    border: 1px solid #141414;
+    border-radius: 100px;
+}
+.header__lesson-link{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* ----------- Main - Hello ----------- */
+.main{
+    overflow: hidden;
+}
+.hello{
+    background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+}
+.hello__wrapper{
+    display: flex;
+}
+.hello__body{
+    max-width: 630px;
+    position: relative;
+}
+.hello__circle{
+    width: 100px;
+    height: 100px;
+    border: 10px solid #FFC600;
+    border-radius: 50%;
+    margin: 85px 0 14px auto;
+}
+.hello__subtitle{
+    display: inline-block;
+    font-size: 24px;
+    line-height: 20px;
+    color: #fff;
+    padding: 10px 15px;
+    background-color: #645CC3;
+    border-radius: 15px 30px 30px 0px;
+    margin-bottom: 19px;
+}
+.hello__subtitle-text{
+    border-right: 1px solid #FFFFFF;
+}
+.hello__title{
+    margin: 0px 0px 41px 0px;
+    position: relative;
+}
+.hello__title-text{
+    font-size: 96px;
+    line-height: 92px;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+}
+.hello__title-img{
+    position: absolute;
+    bottom: -15px;
+    z-index: 1;
+}
+.hello__location{
+    display: flex;
+    margin-bottom: 146px;
+}
+.hello__location-card{
+    display: flex;
+    align-items: center;
+    padding: 16px 25px 16px 20px;
+    margin-right: 12px;
+    background: #FFFFFF;
+    border-radius: 100px;
+}
+.hello__location-text{
+    padding-left: 10px;
+}
+.hello__options{
+    display: flex;
+    padding-bottom: 100px;
+    width: 350px;
+}
+.hello__options-text{
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 20px;
+}
+.hello__image{
+    margin: 135px 0 0 30px;
+    position: relative;
+}
+.hello__image::after{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 38px;
+    bottom: 150px;
+    right: -150px;
+    border-radius: 25px;
+    transform: rotate(135deg);
+    background-color: #5CD8B4;
+}
+.hello__image-circle{
+    position: absolute;
+    top: -23px;
+    right: 21px;
+    width: 160px;
+    height: 160px;
+    background: #FFFFFF;
+    box-shadow: 8px 25px 90px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+}
+.hello__image-text{
+    padding: 40px;
+    line-height: 20px;
+    text-align: center;
+}
+.hello__vector{
+    position: absolute;
+    bottom: 326px;
+    left: -142px;
+}
+
+/* ----------- Main - Enjoy ----------- */
+.enjoy {
+    background: #645CC3;
+}
+.enjoy__wrapper {
+    position: relative;
+}
+.enjoy__image {
+    position: absolute;
+    top: 54px;
+    left: -255px;
+    z-index: 2;
+}
+.enjoy__image-vector{
+    position: absolute;
+    top: 117px;
+    left: -211px;
+}
+.enjoy__body {
+    display: flex;
+}
+.enjoy__item {
+    padding-top: 277px;
+}
+.enjoy__text {
+    font-family: 'Gotham Pro Bold';
+    color: #FFFFFF;
+    font-size: 56px;
+    line-height: 54px;
+    max-width: 630px;
+}
+.enjoy-circle-wrap{
+    position: relative; 
+}
+.enjoy__circle {
+    width: 175px;
+    height: 175px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+.enjoy__circle-text {
+    padding: 63px 46px;
+    color: #141414;
+    line-height: 24px;
+    text-align: center;
+}
+.enjoy__line {
+    position: absolute;
+    bottom: 248px;
+    left: 462px;
+}
+.enjoy__smile {
+    position: relative;
+    margin: 225px 0 225px 31px;
+}
+.enjoy__smile::after{
+    content: '';
+    position: absolute;
+    top: -48px;
+    right: -23px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 6px solid #FFFFFF;
+    opacity: 0.5;
+}
+.enjoy__smile-vector {
+    position: absolute;
+    right: -115px;
+    bottom: -53px;
+}
+
+/* ----------- Footer ----------- */
