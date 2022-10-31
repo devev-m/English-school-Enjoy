@@ -16,48 +16,64 @@
 <body>
     <!-- Header ---------- start -->
     <header class="header">
-        <div class="header__logo">
-            <a href="#" class="header__logo-link">
-                <img class="header__logo-img" src="./img/header/header-logo.svg" alt="logo">
-            </a>
-        </div>
-        <nav class="header__menu">
-            <div class="header__menu-left">
-                <ul class="header__list">
-                    <li class="header__item-left">
-                        <a href="#" class="header__link">О нас</a>
-                    </li>
-                    <li class="header__item-left">
-                        <a href="#" class="header__link">Enjoy</a>
-                    </li>
-                    <li class="header__item-left">
-                        <a href="#" class="header__link">Программы и цены</a>
-                    </li>
-                    <li class="header__item-left">
-                        <a href="#" class="header__link">Филиалы</a>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <img class="header__logo-img" src="./img/header/header-logo.svg" alt="logo">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <div class="header__menu">
+                        <div class="header__menu-left">
+                            <ul class="header__list menu">
+                                <li class="header__item-left">
+                                    <a href="#" class="header__link">О нас</a>
+                                </li>
+                                <li class="header__item-left">
+                                    <a href="#enjoy" class="header__link">Enjoy</a>
+                                </li>
+                                <li class="header__item-left">
+                                    <a href="#programs" class="header__link">Программы и цены</a>
+                                </li>
+                                <li class="header__item-left">
+                                    <a href="#" class="header__link">Филиалы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__menu-right">
+                            <ul class="header__list menu">
+                                <li class="header__item-right ">
+                                    <a href="#" class="header__link">Летний лагерь</a>
+                                </li>
+                                <li class="header__item-right">
+                                    <a href="#" class="header__link">Тестирование</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__lesson-wrapper">
+                        <div class="header__lesson menu">
+                            <a href="#" class="header__lesson-link">Бесплатный урок</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="hamb">
+                    <div class="hamb__field" id="hamb__field">
+                        <span class="hamb__bar hamb__bar_1"></span>
+                        <span class="hamb__bar hamb__bar_2"></span>
+                        <span class="hamb__bar hamb__bar_3"></span>
+                    </div>
+                </div>
+                <div class="popup" id="popup"></div>
             </div>
-            <div class="header__menu-right">
-                <ul class="header__list">
-                    <li class="header__item-right ">
-                        <a href="#" class="header__link">Летний лагерь</a>
-                    </li>
-                    <li class="header__item-right">
-                        <a href="#" class="header__link">Тестирование</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="header__lesson">
-            <a href="#" class="header__lesson-link">Бесплатный урок</a>
         </div>
     </header>
     <!-- Header -->
-
-    <!-- Main -->
+ 
+    
     <main class="main">
-        <!-- section hello ---------- start -->
+        
         <section class="hello">
             <div class="container">
                 <div class="hello__wrapper">
@@ -95,16 +111,15 @@
                     <div class="hello__image">
                         <img class="hello__image-pic" src="./img/hello/enjoy.svg" alt="icon-enjoy">
                         <div class="hello__image-circle">
-                            <p class="hello__image-text">Уроки, которые нравятся детям</p>
+                                Уроки, которые нравятся детям
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- section hello -->
+        
 
-        <!-- section enjoy ---------- start -->
-        <section class="enjoy">
+         <section id="enjoy" class="enjoy">
             <div class="container">
                 <div class="enjoy__wrapper">
                     <div class="enjoy__image">
@@ -133,10 +148,9 @@
                 </div>
             </div>
         </section>
-        <!-- section enjoy -->
-
-        <!-- section prices ---------- start -->
-        <section class="prices">
+        
+        
+        <section id="programs" class="prices">
             <div class="container">
                 <h3 class="prices__title">Программы и цены</h3>
                 <div class="prices__programs">
@@ -283,9 +297,8 @@
                 </div>
             </div>
         </section>
-        <!-- section prices -->
+        
 
-        <!-- section gifts ---------- start -->
         <section class="gifts">
             <div class="container">
                 <h4 class="gifts__title">А так же бесплатно для всех учеников</h4>
@@ -319,9 +332,8 @@
                 </div>
             </div>
         </section>
-        <!-- section gifts -->
-
-        <!-- section process ---------- start -->
+     
+      
         <section class="process">
             <div class="container">
                 <img src="./img/process/line-back.svg" alt="line-back" class="process__background-img">
@@ -367,9 +379,8 @@
                 </div>
             </div>
         </section>
-        <!-- section process -->
+        
 
-        <!-- section free ---------- start -->
         <section class="free">
             <div class="container">
                 <div class="free__fly">
@@ -409,12 +420,11 @@
                 </div>
             </div>
         </section>
-        <!-- section free -->
+        
     </main>
-    <!-- Main -->
-
-    <!-- Footer ---------- start -->
-    <footer class="footer">
+   
+   
+    <footer class="footer menu">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__contacts">
@@ -460,7 +470,9 @@
             </div>
         </div>
     </footer>
-    <!-- Footer -->
+    
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
